@@ -34,7 +34,7 @@ class Post
   def file_path
     curent_path = File.dirname(__FILE__)
 
-    file_name = @created_at.strftime("#{self.close.name}_%Y-%m-%d_%H-%M-%S.txt")
+    file_name = @created_at.strftime("#{self.class.name}_%Y-%m-%d_%H-%M-%S.txt")
 
     return curent_path + "/" + file_name
   end
