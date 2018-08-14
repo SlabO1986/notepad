@@ -3,7 +3,7 @@ class Link < Post
   def initialize
     super
 
-    @url = " "
+    @url = ''
   end
 
   def read_from_console
